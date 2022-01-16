@@ -1,0 +1,15 @@
+C:\Users\Shree\source\repos\FellowshipPrograms\FellowshipPrograms\bin\Debug\net6.0\FellowshipPrograms.exe
+C:\Users\Shree\source\repos\FellowshipPrograms\FellowshipPrograms\bin\Debug\net6.0\FellowshipPrograms.deps.json
+C:\Users\Shree\source\repos\FellowshipPrograms\FellowshipPrograms\bin\Debug\net6.0\FellowshipPrograms.runtimeconfig.json
+C:\Users\Shree\source\repos\FellowshipPrograms\FellowshipPrograms\bin\Debug\net6.0\FellowshipPrograms.dll
+C:\Users\Shree\source\repos\FellowshipPrograms\FellowshipPrograms\bin\Debug\net6.0\ref\FellowshipPrograms.dll
+C:\Users\Shree\source\repos\FellowshipPrograms\FellowshipPrograms\bin\Debug\net6.0\FellowshipPrograms.pdb
+C:\Users\Shree\source\repos\FellowshipPrograms\FellowshipPrograms\obj\Debug\net6.0\FellowshipPrograms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shree\source\repos\FellowshipPrograms\FellowshipPrograms\obj\Debug\net6.0\FellowshipPrograms.AssemblyInfoInputs.cache
+C:\Users\Shree\source\repos\FellowshipPrograms\FellowshipPrograms\obj\Debug\net6.0\FellowshipPrograms.AssemblyInfo.cs
+C:\Users\Shree\source\repos\FellowshipPrograms\FellowshipPrograms\obj\Debug\net6.0\FellowshipPrograms.csproj.CoreCompileInputs.cache
+C:\Users\Shree\source\repos\FellowshipPrograms\FellowshipPrograms\obj\Debug\net6.0\FellowshipPrograms.dll
+C:\Users\Shree\source\repos\FellowshipPrograms\FellowshipPrograms\obj\Debug\net6.0\ref\FellowshipPrograms.dll
+C:\Users\Shree\source\repos\FellowshipPrograms\FellowshipPrograms\obj\Debug\net6.0\FellowshipPrograms.pdb
+C:\Users\Shree\source\repos\FellowshipPrograms\FellowshipPrograms\obj\Debug\net6.0\FellowshipPrograms.genruntimeconfig.cache
+C:\Users\Shree\source\repos\FellowshipPrograms\FellowshipPrograms\obj\Debug\net6.0\FellowshipPrograms.csproj.AssemblyReference.cache
