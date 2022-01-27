@@ -8,12 +8,13 @@ namespace SnakeAndLadder
 {
     internal class SnakeAndLadder
     {
-        public int Start = 0;
-        public void GamePlayed()
+        public int StartPoint = 0;
+        public int DiceRoll;
+        public void StartPlaying()
         {
-            Console.WriteLine("Game start now");
-
-            Console.WriteLine("Starting point is " + Start);
+            Random Random = new Random();
+            DiceRoll = Random.Next(1, 7);
+            Console.WriteLine("player Roll  Dice number is:" + " " + DiceRoll);
         }
     }
 }
