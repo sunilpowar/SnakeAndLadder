@@ -8,46 +8,99 @@ namespace SnakeAndLadder
 {
     internal class SnakeAndLadder
     {
-        public const int NO_PLAY = 0, SNAKE = 1, LADDER = 2, WINNING = 100;
-        public int Start = 0;
-        public int RolledDice;
-        int Option = 0;
-        int count = 0;
-        public void GamePlayed()
+        public const int POSITION = 0;
+        public const int WINNING_POSITION = 100;
+        public void playGame()
         {
-            while (this.Start != 100)
-            {
-                count++;
-                Random Random = new Random();
-                RolledDice = Random.Next(1, 7);
+            //Variable
+            int dieCountForPlayer1 = 0;
+            int dieCountForPlayer2 = 0;
+            int positionForPlayer1 = 0;
+            int positionForPlayer2 = 0;
+            int position = 0;
 
-                Console.WriteLine("player Roll  Dice number is:" + " " + RolledDice);
-                Option = Random.Next(0, 3);
-                Console.WriteLine("option value:" + Option);
-                switch (Option)
+            Random random = new Random();
+            int player = random.Next(0, 7);
+
+            Random random1 = new Random();
+            int option = random1.Next(0, 3);
+
+
+            Console.WriteLine("Snake And Ladder Game");
+            while (dieCountForPlayer1 != WINNING_POSITION && dieCountForPlayer2 != WINNING_POSITION)
+            {
+                dieCountForPlayer1++;
+                switch (option)
                 {
-                    case NO_PLAY:
-                        Console.WriteLine("No Play");
+                    case 0:
+                    case 1:
+                        Console.WriteLine("Player stay at the same position");
                         break;
-                    case SNAKE:
-                        Start -= RolledDice;
-                        Console.WriteLine("Snake Attack:" + Start);
+
+                    case 2:
+                        Console.WriteLine("Your current position is:" + position);
+                        Console.WriteLine("You encountered a ladder");
+                        if ((position + player) > 100)
+                        {
+                            Console.WriteLine("Current position is:" + position);
+                        }
+                        else
+                        {
+                            position = position + player;
+                            Console.WriteLine("Player ladder moves ahead:" + position);
+                        }
                         break;
-                    case LADDER:
-                        Start += RolledDice;
-                        Console.WriteLine("Got Ladder:" + Start);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid Option");
+
+                    case 3:
+                        if (position > player)
+                        {
+                            position = position - player;
+                        }
                         break;
                 }
-                if (Start < 0)
+                positionForPlayer1 = position;
+                Console.WriteLine("player 1 die count " + dieCountForPlayer1 + ": Position" + positionForPlayer1);
+                dieCountForPlayer2++;
+                switch (option)
                 {
-                    Start = 0;
+                    case 0:
+                    case 1:
+                        Console.WriteLine("Player stay at the same position");
+                        break;
+
+                    case 2:
+                        Console.WriteLine("Your current position is:" + position);
+                        Console.WriteLine("You encountered a ladder");
+                        if ((position + player) > 100)
+                        {
+                            Console.WriteLine("Current position is:" + position);
+                        }
+                        else
+                        {
+                            position = position + player;
+                            Console.WriteLine("Player ladder moves ahead:" + position);
+                        }
+                        break;
+
+                    case 3:
+                        if (position > player)
+                        {
+                            position = position - player;
+                        }
+                        break;
                 }
+                positionForPlayer2 = position;
+                Console.WriteLine("player 2 die count" + dieCountForPlayer2 + ": Position" + positionForPlayer2);
             }
-            Console.WriteLine("Number of times rolled dice " + count);
-            Console.WriteLine("successful");
+            if (positionForPlayer1 == WINNING_POSITION)
+            {
+                Console.WriteLine("Player1 won the game, You rolled the die " + dieCountForPlayer1 + " times");
+            }
+            else
+            {
+                Console.WriteLine("Player2 won the game, You rolled the die " + dieCountForPlayer2 + " times");
+            }
+
 
         }
     }
